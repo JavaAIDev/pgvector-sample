@@ -1,0 +1,22 @@
+spring:
+  application.name: pgvector
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      chat:
+        options:
+          model: gpt-3.5-turbo
+          temperature: 0.0
+      embedding:
+        options:
+          model: text-embedding-3-small
+    vectorstore:
+      pgvector:
+        tableName: vector_store
+        schemaName: public
+        schemaValidation: false
+        initializeSchema: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres

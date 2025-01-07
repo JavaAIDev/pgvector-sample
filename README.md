@@ -1,1 +1,2 @@
-# pgvector-sample
+# pgvector Spring AI sample
+
