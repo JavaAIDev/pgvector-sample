@@ -2,10 +2,10 @@ spring:
   application.name: pgvector
   ai:
     openai:
-      api-key: ${OPENAI_API_KEY:}
+      api-key: ${OPENAI_API_KEY:demo}
       chat:
         options:
-          model: gpt-3.5-turbo
+          model: gpt-4o-mini
           temperature: 0.0
       embedding:
         options:
